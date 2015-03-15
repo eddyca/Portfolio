@@ -105,8 +105,8 @@ body {
 }
 
 .portfolio {
-    width: 280px;
-    height: 280px;
+/*    width: 280px;
+    height: 280px;*/
     background-color: #569AC7;
     margin-bottom: 20px;
 }
@@ -181,7 +181,6 @@ section>.container {
     width:281px;
     height:35px;
     background:url(../img/logo.png) no-repeat;
-    -webkit-background-size:281px 35px;
     background-size:281px 35px
 }
 #container {
@@ -192,11 +191,21 @@ section>.container {
     font-weight:bold;
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size:18px;
-    -webkit-transition:1s all;transition:1s all
+    color: whitesmoke;
 }
 
 #container .portfolio>a>div .category {
-    font-size:12px
+    font-size:12px;
+    color: whitesmoke;
+}
+
+#container .portfolio>a>div p {
+    font-size:12px;
+    color: whitesmoke;
+}
+
+.masonry {
+    line-height: .75;
 }
 
 #container .portfolio>a>div div{
@@ -207,6 +216,12 @@ section>.container {
     opacity:1;
     -webkit-transition:.3s .1s all;
     transition:.3s .1s all;
+}
+.portfolio.w1 {
+    height: 280px;
+}
+.portfolio.h1 {
+    height: 280px;
 }
 .portfolio.w2 {
     width: 580px;
