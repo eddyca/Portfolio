@@ -7,80 +7,6 @@
  */
 
 /* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-    resize: vertical;
-}
-
-/* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
 
@@ -94,7 +20,12 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-* { box-sizing: border-box; }
+html {
+box-sizing: border-box;
+}
+*, *:before, *:after {
+box-sizing: inherit;
+}
 
 a {
     text-decoration: none;
@@ -162,11 +93,12 @@ body {
 
 .nav_main a:hover {
     text-decoration:none;
-    border-color:#569AC7;
+    border-color:#45AAF3;
 }
 .nav_main li:hover span,.nav_main li.focus span,.nav_main li.selected span {
     width:100%;
-    background-color:#569AC7;
+    background-color:#45AAF3;
+    z-index: -1;
 }
 
 
@@ -197,7 +129,6 @@ body {
 }
 #container .portfolio>a>div h2{
   margin:0;
-  font-weight:bold;
   font-family: "ff-tisa-web-pro",serif;
   font-style: normal;
   font-weight: 700;
@@ -225,7 +156,8 @@ body {
 
 #container .portfolio>a>div {
   background: url(../img/blue_square.svg);
-
+  height: 280px;
+  width: 280px;
 }
 
 .long {
@@ -234,7 +166,7 @@ body {
 
 .large {
 
-} 
+}
 
 #container .portfolio>a>div div{
   background: url(../img/blue_square.svg);
@@ -254,7 +186,7 @@ body {
 */  font-size:14px;
     font-family: "ff-tisa-sans-web-pro",sans-serif;
     font-style: normal;
-    font-weight: 400;    
+    font-weight: 400;
     text-transform:uppercase;
 }
 .nav_portfolio ul,.nav_words ul {
