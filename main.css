@@ -22,19 +22,22 @@
    ========================================================================== */
 html {
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
-/* Box model visual aid
+
+
 * {
   border: 1px solid #343634;
 }
-*/
+
 
 a {
   text-decoration: none;
+  color: #343634;
 }
 
 body {
@@ -171,15 +174,15 @@ ul.nav {
 
 /*.portfolio>a>div:nth-of-type(1) {
   background:url(../img/black_square.svg) 0 0 no-repeat;
-
 }*/
 
-.portfolio>a>div h2 {
+.portfolio>a>div>h2 {
   margin:0;
   font-family: "league-gothic",sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size:18px;
+  letter-spacing: 2px;
 /*  -webkit-transition:1s all;
   transition:1s all;*/
 }
@@ -201,6 +204,7 @@ ul.nav {
 .portfolio>a>div div p:first-child {
   position:relative;
   margin-bottom:0;
+  top: 16px;
   font-size:12px;
 }
 
@@ -227,7 +231,7 @@ ul.nav {
   background-image:none;color:#3e3e3e !important;*/
 }
 
-.portfolio.w2.h2>a>div div {
+/*.portfolio.w2.h2>a>div div {
   position:relative;
   top:0;
   left:0;
@@ -239,9 +243,16 @@ ul.nav {
 .portfolio.w2.h2>a>div div p:first-child {
   position:relative;
   margin-bottom:0;
+}*/
+div.nav_portfolio {
+  width: 90%;
+  text-decoration: none;
+  position: relative;
+  top: 0;
+  margin: 0 auto
 }
 
-nav_portfolio {
+.categories li {
   display: inline-block;
   color: #343634;
 }
