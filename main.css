@@ -167,9 +167,10 @@ ul.nav {
   transition:1s all;*/
 }
 
-/*.portfolio>a>div:nth-of-type(1) {
+.black>a>div {
   background:url(../img/black_square.svg) 0 0 no-repeat;
-}*/
+  color: white;
+}
 .w2.h2>a>div{
   top:68px;
   background:url(../img/blue_large.svg) 0 0 no-repeat;
@@ -182,9 +183,9 @@ ul.nav {
 }
 
 .w1.h2>a>div {
-  top:68px;
+  top:0px;
   background:url(../img/blue_long.svg) 0 0 no-repeat;
-  background-size:580px 362px;
+  background-size:282px 364px;
 }
 
 
