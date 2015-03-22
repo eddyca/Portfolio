@@ -7,7 +7,7 @@
       resizable: false,
       isFitWidth: true,
       gutter: 20,
-      columnWidth: $('container').find('.portfolio')[0]
+      columnWidth: $('#container').find('portfolio')[0]
     }
   });
 
