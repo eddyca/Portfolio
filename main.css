@@ -41,14 +41,15 @@ a {
 }
 
 body {
-  font-family: 'league_gothicregular';
-  font-weight: normal;
-  font-style: normal;
-  letter-spacing: 1px;
   font-size: 100%;
+  background: #f2f2f2;
+  -webkit-font-smoothing: antialiased;
 }
 
 .nav_main {
+  font-family: "refrigerator-deluxe",sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size:1em;
   position: relative;
   width: 83%;
@@ -169,7 +170,7 @@ ul.nav {
 
 .black>a>div {
   background:url(../img/black_square.svg) 0 0 no-repeat;
-  color: white;
+  color: #f2f2f2;
 }
 .w2.h2>a>div{
   top:68px;
@@ -179,7 +180,7 @@ ul.nav {
 
 .black.w2.h2>a>div {
   background:url(../img/black_large.svg) 0 0 no-repeat;
-  color: white;
+  color: #f2f2f2;
 }
 
 .w1.h2>a>div {
@@ -188,20 +189,31 @@ ul.nav {
   background-size:282px 364px;
 }
 
-
+.portfolio>a>div div p:first-child {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position:relative;
+  margin-bottom:0;
+  top: 16px;
+  font-size: .75em;
+}
 .masonry>h2 {
+  font-family: "ff-tisa-web-pro",serif;
   font-style: normal;
   font-weight: 400;
-  top: 8px;
+  top: 6px;
   font-size: 1em;
   position: relative;
   letter-spacing: 1px;
+  line-height: 21px;
 /*  -webkit-transition:1s all;
   transition:1s all;*/
 }
 
-.portfolio>a>div .category {
-  font-size:12px;
+.category {
+  font-size: .75em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .portfolio>a>div div {
@@ -212,13 +224,6 @@ ul.nav {
   opacity:1;
 /*  -webkit-transition:.3s .1s all;
   transition:.3s .1s all;*/
-}
-
-.portfolio>a>div div p:first-child {
-  position:relative;
-  margin-bottom:0;
-  top: 16px;
-  font-size: 0.75em;
 }
 
 .portfolio.w1.h2>a>div {
@@ -263,12 +268,16 @@ div.nav_portfolio {
   position: relative;
   top: 0;
   margin: 0 auto;
+  letter-spacing: 1.5px;
+  font-size: .75em;
+  text-transform: uppercase;
 }
 
 .categories li {
   display: inline-block;
   color: #343634;
 }
+
 
 /* ==========================================================================
    MEDIA QUERIES!
