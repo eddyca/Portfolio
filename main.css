@@ -29,10 +29,10 @@ html {
   box-sizing: inherit;
 }
 
-
-* {
+/*Box model peek*/
+/** {
   border: 1px solid #343634;
-}
+}*/
 
 
 a {
@@ -44,21 +44,18 @@ body {
   font-family: 'league_gothicregular';
   font-weight: normal;
   font-style: normal;
-  text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 100%;
 }
 
 .nav_main {
-  font-size:1.250em;
+  font-size:1em;
   position: relative;
   width: 83%;
   top: 90px;
   margin: 0 auto;
   margin-bottom: 150px;
-/*  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;*/
+  height: 35px;
 }
 
 /*nav_main>a>img {
@@ -73,9 +70,8 @@ body {
 
 ul.nav {
   position: relative;
-  top: -54px;
-  /* bottom: 0; */
-  left: 20px;
+  top: -42px;
+  left: 3px;
   text-align: right;
   height: 35px;
 }
@@ -86,7 +82,7 @@ ul.nav {
   left: 0px;
   list-style-type:none;
   display:inline-block;
-  margin:0 0.75em 1em 0;
+  margin: 0 0 0 1em;
   padding:0;
   overflow:hidden;
 }
@@ -174,14 +170,31 @@ ul.nav {
 /*.portfolio>a>div:nth-of-type(1) {
   background:url(../img/black_square.svg) 0 0 no-repeat;
 }*/
+.w2.h2>a>div{
+  top:68px;
+  background:url(../img/blue_large.svg) 0 0 no-repeat;
+  background-size:580px 362px;
+}
 
-.portfolio>a>div>h2 {
-  margin:0;
-  font-family: "league-gothic",sans-serif;
+.black.w2.h2>a>div {
+  background:url(../img/black_large.svg) 0 0 no-repeat;
+  color: white;
+}
+
+.w1.h2>a>div {
+  top:68px;
+  background:url(../img/blue_long.svg) 0 0 no-repeat;
+  background-size:580px 362px;
+}
+
+
+.masonry>h2 {
   font-style: normal;
   font-weight: 400;
-  font-size:18px;
-  letter-spacing: 2px;
+  top: 8px;
+  font-size: 1em;
+  position: relative;
+  letter-spacing: 1px;
 /*  -webkit-transition:1s all;
   transition:1s all;*/
 }
@@ -204,7 +217,7 @@ ul.nav {
   position:relative;
   margin-bottom:0;
   top: 16px;
-  font-size:12px;
+  font-size: 0.75em;
 }
 
 .portfolio.w1.h2>a>div {
@@ -244,11 +257,11 @@ ul.nav {
   margin-bottom:0;
 }*/
 div.nav_portfolio {
-  width: 90%;
+  width: 83%;
   text-decoration: none;
   position: relative;
   top: 0;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 .categories li {
