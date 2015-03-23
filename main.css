@@ -42,15 +42,15 @@ a {
 
 body {
   font-size: 100%;
-  background: #f2f2f2;
-  -webkit-font-smoothing: antialiased;
+/*  background: #f2f2f2;
+*/  -webkit-font-smoothing: antialiased;
 }
 
 .nav_main {
   font-family: "refrigerator-deluxe",sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size:1em;
+  font-size:1.25em;
   position: relative;
   width: 83%;
   top: 90px;
@@ -169,6 +169,15 @@ ul.nav {
   background:url(../img/blue_large.svg) 0 0 no-repeat;
   background-size:580px 362px;
 }
+.portfolio>a>div div {
+  position:absolute;
+  bottom:70px;
+  left:20px;
+  padding-right:80px;
+  opacity:1;
+/*  -webkit-transition:.3s .1s all;
+  transition:.3s .1s all;*/
+}
 
 .black.w2.h2>a>div {
   background:url(../img/black_large.svg) 0 0 no-repeat;
@@ -201,23 +210,15 @@ ul.nav {
 /*  -webkit-transition:1s all;
   transition:1s all;*/
 }
+.masonry.large{
+  top:258px;
+}
 
 .category {
   font-size: .75em;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-
-.portfolio>a>div div {
-  position:absolute;
-  bottom:70px;
-  left:20px;
-  padding-right:80px;
-  opacity:1;
-/*  -webkit-transition:.3s .1s all;
-  transition:.3s .1s all;*/
-}
-
 
 div.nav_portfolio {
   width: 83%;
@@ -264,6 +265,43 @@ div.nav_portfolio {
     text-align: center;
     height: 35px;
   }
+  .portfolio>a>div {
+  position:absolute;
+  top:53px;
+  left:0;
+  width:280px;
+  height:280px;
+  padding:30px;
+  background:url(../img/blue_square.svg) 0 0 no-repeat;
+  background-size:280px 227px;
+  opacity:1;
+/*  -webkit-transform:translate3d(0%, 0, 0);
+  transform:translate3d(0%, 0, 0);
+  -ms-transform:translateX(0%);
+  -webkit-transition:1s all;
+  transition:1s all;*/
+  }
+
+  .black>a>div {
+    background:url(../img/black_square.svg) 0 0 no-repeat;
+    color: #f2f2f2;
+  }
+  .w2.h2>a>div{
+    top:53px;
+    background:url(../img/blue_square.svg) 0 0 no-repeat;
+    background-size:280px 227px;
+  }
+
+  .black.w2.h2>a>div {
+    background:url(../img/black_large.svg) 0 0 no-repeat;
+    color: #f2f2f2;
+  }
+
+  .portfolio.w1.h2>a>div {
+    top: 68px;
+    background:url(../img/blue_long.svg) 0 0 no-repeat;
+    background-size:282px 364px;
+  }
 
   .nav_main li {
       position:relative;
@@ -275,7 +313,6 @@ div.nav_portfolio {
   }
 
 }
-
 
 
 
