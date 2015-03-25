@@ -23,7 +23,7 @@
   <![endif]-->
   <!-- <div class="site_context"> -->
     <div class="nav_main">
-      <a href="/"><img src="img/logo.svg" alt=""></a>
+      <a href="/"><img src="img/Logo.svg" alt=""></a>
         <ul class="nav swing">
           <li><a href="#">Portfolio</a><span></span></li>
           <li><a href="#">About</a><span></span></li>
@@ -48,7 +48,7 @@
       <div class="portfolio w2 h2">
         <a href=""><img src="img/large_img_3.png" alt="">
           <div>
-              <div class="masonry large">
+              <div class="masonry large artist-book">
                 <p>Personal</p>
                 <h2>Analog/Digital Ritual: <br>Materializing Facebook</h2>
                 <p class="category">Artist Book</p>
@@ -56,7 +56,7 @@
             </div>
           </a>
         </div>
-      <div class="portfolio black">
+      <div class="portfolio black exhibition">
         <a href=""><img src="img/square1.png" alt="">
           <div>
               <div class="masonry square">
@@ -78,7 +78,7 @@
             </div>
           </a>
         </div>
-      <div class="portfolio black w2 h2">
+      <div class="portfolio black w2 h2 exhibition">
         <a href=""><img src="img/large_img_2.png" alt="">
           <div>
               <div class="masonry large">
@@ -89,7 +89,7 @@
             </div>
           </a>
         </div>
-      <div class="portfolio">
+      <div class="portfolio artist-book">
         <a href=""><img src="img/square3.png" alt="">
           <div>
             <div class="masonry">
@@ -100,7 +100,7 @@
            </div>
           </a>
         </div>
-      <div class="portfolio">
+      <div class="portfolio placeholder">
         <img src="img/black_placeholder_img-01.svg" alt="">
         </div>
       <div class="portfolio">
@@ -147,10 +147,10 @@
             </div>
           </a>
         </div>
-      <div class="portfolio">
+      <div class="portfolio placeholder">
         <img src="img/blue_placeholder_img-01.svg" alt="">
         </div>
-      <div class="portfolio black">
+      <div class="portfolio black digital">
         <a href=""><img src="img/square10.png" alt="">
           <div>
               <div class="masonry">
@@ -161,7 +161,7 @@
             </div>
           </a>
         </div>
-      <div class="portfolio">
+      <div class="portfolio print">
         <a href=""><img src="img/square11.png" alt="">
           <div>
               <div class="masonry">
@@ -172,7 +172,7 @@
             </div>
           </a>
         </div>
-      <div class="portfolio black">
+      <div class="portfolio black photography">
         <a href="#"><img src="img/square12.png" alt="">
           <div>
               <div class="masonry">
@@ -186,14 +186,14 @@
   </div>
 
   <div class="nav_portfolio">
-    <ul class="categories">
+    <ul id="filters">
 
-    <li class="selected"><a href="#">Full Portfolio</a></li>
-    <li class=""><a href="#">Exhibition</a></li>
-    <li class=""><a href="#">Digital</a></li>
-    <li class=""><a href="#">Print</a></li>
-    <li class=""><a href="#">Digital</a></li>
-    <li class=""><a href="#">Photography</a></li>
+    <li class="selected" data-filter="*"><a href="#">Full Portfolio</a></li>
+    <li class="" data-filter=".exhibition"><a href="#">Exhibition</a></li>
+    <li class="" data-filter=".digital"><a href="#">Digital</a></li>
+    <li class="" data-filter=".print"><a href="#">Print</a></li>
+    <li class="" data-filter=".artist-book"><a href="#">Artist Book</a></li>
+    <li class="" data-filter=".photography"><a href="#">Photography</a></li>
   </ul>
   </div>
  <!--  <footer><hr><p>Erica Lynn Rodriguez<br>&copy; 2015</p></footer> -->
