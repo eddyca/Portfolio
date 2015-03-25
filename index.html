@@ -12,7 +12,6 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <script src="//use.typekit.net/sre8ocs.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
-<link rel="stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8" />
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/main.css">
 <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -21,17 +20,17 @@
 <!--[if lt IE 8]>
   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-  <!-- <div class="site_context"> -->
+
     <div class="nav_main">
       <a href="/"><img src="img/Logo.svg" alt=""></a>
-        <ul class="nav swing">
+        <ul class="nav">
           <li><a href="#">Portfolio</a><span></span></li>
           <li><a href="#">About</a><span></span></li>
           <li><a href="#">Contact</a><span></span></li>
           <li><a href="#">Blog</a><span></span></li>
         </ul>
     </div>
- <!--  </div> -->
+
 <div>
     <div id="container">
       <div class="portfolio black">
@@ -46,7 +45,7 @@
           </a>
         </div>
       <div class="portfolio w2 h2">
-        <a href=""><img src="img/large_img_3.png" alt="">
+        <a href=""><img src="img/large_img_3.png" alt="" class="large"><img src="img/img_3.png" alt="" class="small_3">
           <div>
               <div class="masonry large artist-book">
                 <p>Personal</p>
@@ -68,7 +67,7 @@
           </a>
         </div>
       <div class="portfolio w1 h2">
-        <a href=""><img src="img/long_img.png" alt="">
+        <a href=""><img src="img/long_img.png" alt="" class="large"><img src="img/img.png" alt="" class="small">
           <div>
               <div class="masonry long">
                 <p>Pro Bono</p>
@@ -79,7 +78,7 @@
           </a>
         </div>
       <div class="portfolio black w2 h2 exhibition">
-        <a href=""><img src="img/large_img_2.png" alt="">
+        <a href=""><img src="img/large_img_2.png" alt="" class="large"><img src="img/img_2.png" alt="" class="small_2">
           <div>
               <div class="masonry large">
                 <p>Natural History</p>
@@ -186,7 +185,7 @@
   </div>
 
   <div class="nav_portfolio">
-    <ul id="filters">
+    <ul id="filters" class="categories">
 
     <li class="selected" data-filter="*"><a href="#">Full Portfolio</a></li>
     <li class="" data-filter=".exhibition"><a href="#">Exhibition</a></li>
