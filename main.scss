@@ -1,0 +1,552 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@import "bourbon", "neat";
+
+// colors
+$blue: #45AAF3;
+$grey: #343634;
+$concrete: #f2f2f2;
+
+@mixin mobile {
+  @media only screen and (max-width: 600px), only screen and (max-device-width: 480px) {
+    @content;
+  }
+}
+
+html {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+  /*Box model peek*/
+/** { border: 1px solid $grey; }*/
+
+a {
+  text-decoration: none;
+  color: $grey;
+}
+
+body {
+  font-size: 100%;
+  line-height: 21px;
+  /*  background: $concrete;*/
+  -webkit-font-smoothing: antialiased;
+}
+
+.nav_main {
+  font-family: "refrigerator-deluxe",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size:1.25em;
+  position: relative;
+  width: 83%;
+  top: 90px;
+  margin: 0 auto;
+  margin-bottom: 150px;
+  height: 35px;
+  max-width: 90%;
+  @include mobile {
+    width: 90%;
+    top: 35px;
+    margin-bottom: 100px;
+  }
+    a {
+    color: $grey;
+    height: 35px;
+  }
+    a img {
+    @include mobile {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+    ul.nav {
+    position: relative;
+    top: -48px;
+    left: 3px;
+    text-align: right;
+    height: 35px;
+    @include mobile {
+      top: -2px;
+      text-align: center;
+    }
+  }
+    li {
+    position:relative;
+    top: 0px;
+    left: 0px;
+    list-style-type:none;
+    display:inline-block;
+    margin: 0 0 0 1em;
+    padding:0;
+    overflow:hidden;
+    @include mobile {
+      margin:0 0.75em 1em 0;
+    }
+  }
+    span {
+    position:absolute;
+    bottom:0px;
+    left:0;
+    display:block;
+    width:0;
+    height:4px;
+    background-color:transparent;
+    z-index:2;
+  }
+    li:hover span,
+    li.focus span,
+    li.selected span {
+    width:100%;
+    background-color:$blue;
+    z-index: -1;
+  }
+}
+
+#container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1180px;
+}
+
+.portfolio {
+  width: 280px;
+  height: 280px;
+  margin-bottom: 20px;
+  overflow:hidden;
+  a:hover div {
+    -webkit-transition:.15s all;
+    transition:.15s all
+  }
+  a:hover div, a:hover div {
+    opacity:1;
+    -webkit-transform:translate3d(0, 0, 0);
+    transform:translate3d(0, 0, 0);
+    -webkit-transform:translateX(0);
+    -ms-transform:translateX(0);
+    transform:translateX(0)
+  }
+}
+
+.w1 { width: 280px; }
+
+.h1 { height: 280px; }
+
+.w2 { width: 580px; }
+
+.h2 { height: 430px; }
+
+.portfolio>a>div {
+  position:absolute;
+  top:53px;
+  left:0;
+  width:100%;
+  height:100%;
+  padding:30px;
+  background:url(../img/blue_square.svg) 0 0 no-repeat;
+  background-size:280px 227px;
+  opacity:1;
+  // -webkit-transform:translate3d(0, 100%, 0);
+  // transform:translate3d(0, 100%, 0);
+  // -ms-transform:translateX(0, 100%, 0);
+  // -webkit-transition:1s all;
+  // transition:1s all;
+  @include mobile {
+    -webkit-transform:translate3d(0, 0, 0);
+    transform:translate3d(0, 0, 0);
+    -ms-transform:translateX(0, 0, 0);
+    -webkit-transition:1s all;
+    transition:1s all;
+  }
+}
+
+.black>a>div {
+    background:url(../img/black_square.svg) 0 0 no-repeat;
+    color: $concrete;
+}
+
+.w2.h2>a>div{
+  top:68px;
+  background:url(../img/blue_large.svg) 0 0 no-repeat;
+  background-size:580px 362px;
+  @include mobile {
+    top: 53px;
+    background:url(../img/blue_square.svg) 0 0 no-repeat;
+    background-size:280px 227px;
+  }
+}
+
+.black.w2.h2>a>div {
+  background:url(../img/black_large.svg) 0 0 no-repeat;
+  opacity: 1;
+  @include mobile {
+    top: 53px;
+    background:url(../img/black_square.svg) 0 0 no-repeat;
+    background-size:280px 227px;
+  }
+}
+
+.masonry {
+  position:absolute;
+  bottom:70px;
+  left:20px;
+  padding-right:80px;
+  opacity:1;
+  // line-height: 28px;
+  h2 {
+    font-family: "ff-tisa-web-pro",serif;
+    font-style: normal;
+    font-weight: 400;
+    top: -10px;
+    font-size: 1em;
+    position: relative;
+    letter-spacing: 1px;
+    line-height: 21px;
+  }
+  a {
+    position:relative;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+  }
+  &.large {
+    top:275px;
+    @include mobile {
+      display: block;
+      top: 140px;
+    }
+  }
+  &.long {
+    top: 275px;
+    @include mobile {
+      top:140px;
+    }
+  }
+  p {
+    position: absolute;
+    top: -30px;
+    font-family: "refrigerator-deluxe",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: .75em;
+  }
+  .category {
+    position: absolute;
+    top: 40px;
+    font-family: "refrigerator-deluxe",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: .75em;
+  }
+}
+
+.portfolio.w1.h2>a>div {
+  top: 68px;
+  background:url(../img/blue_long.svg) 0 0 no-repeat;
+  background-size:282px 364px;
+  @include mobile {
+    top: 53px;
+    background:url(../img/blue_square.svg) 0 0 no-repeat;
+    background-size:280px 227px;
+  }
+}
+
+.placeholder { 
+  opacity: .5; 
+  @include mobile {
+    display: none;
+  }
+}
+
+.nav_portfolio {
+  width: 83%;
+  text-decoration: none;
+  position: relative;
+  top: 0;
+  left: 0px;
+  margin: 0 auto;
+  letter-spacing: 1.5px;
+  font-size: .9em;
+  padding-bottom: 90px;
+  text-transform: uppercase;
+  max-width: 1185px;
+  &a:hover {
+    background-color:$blue;
+    z-index: -1;
+  }
+}
+
+.categories {
+  padding:0;
+  li {
+    display: inline;
+    padding-right: 10px;
+  }
+  .selected {
+    background-color:$blue;
+    z-index: -1;
+  }
+}
+.footer {
+  ///////////////////////////////////////////////////////////////////////////////////
+  $base-spacing: 1em !default;
+  $base-accent-color: #477DCA !default;
+  $medium-screen: em(640) !default;
+  $large-screen: em(860) !default;
+  
+  ul {
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    line-height: 1.5em;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  //////////////////////////////////////////////////////////////////////////////////
+
+  $footer-background: transparent;
+  $footer-color: $grey;
+  $footer-link-color: transparentize($footer-color, 0.6);
+  $footer-disclaimer-color: transparentize($footer-color, 0.6);
+
+  background: $footer-background;
+  padding: ($base-spacing * 2) $gutter;
+  width: 100%;
+  font-family: "refrigerator-deluxe",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1em;
+
+  .footer-logo {
+    margin-bottom: 2em;
+    text-align: center;
+
+    img {
+      height: 3em;
+    }
+  } 
+
+  .footer-links {
+    @include clearfix;
+    margin-bottom: $base-spacing;
+
+    @include media($medium-screen) {
+      @include shift(3);
+    }
+  }
+
+  ul {
+    margin-bottom: $base-spacing * 2;
+
+    @include media($medium-screen) {
+      @include span-columns(3);
+      @include omega(3n);
+      @include clearfix;
+    }
+  }
+
+  li {
+    text-align: center;
+
+    @include media($medium-screen) {
+      text-align: left;
+    }
+  }
+
+  li a {
+    color: $grey;
+    font-family: "ff-tisa-web-pro",serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    &:focus,
+    &:hover {
+      color: transparentize($grey, 0);
+    }
+  }
+
+  li h3 {
+    color: $grey;
+    font-size: 1em;
+    font-weight: 800;
+    margin-bottom: 0.4em;
+  }  
+
+  hr {
+    border: 1px solid transparentize($footer-disclaimer-color, 0.3);
+    margin: 0 auto $base-spacing;
+    width: 90%;
+  }
+
+  p {
+    font-family: "ff-tisa-web-pro",serif;
+    font-style: normal;
+    font-weight: 400;
+    color: $grey;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin: auto;
+    max-width: 35em;
+    text-align: center;
+    span {
+      color: $blue;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 600px), only screen and (max-device-width: 480px) {
+  .large { display: none; }
+
+  .small_3 { display: block; }
+
+  .small_3 { display: block; }
+
+  .small { display: block; }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/* Prevent callout */
+
+.nocallout {
+  -webkit-touch-callout: none;
+}
+
+.pressed {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* A hack for HTML5 contenteditable attribute on mobile */
+
+textarea[contenteditable] {
+  -webkit-appearance: none;
+}
+
+/* A workaround for S60 3.x and 5.0 devices which do not animated gif images if
+   they have been set as display: none */
+
+.gifhidden {
+  position: absolute;
+  left: -100%;
+}
+
+/*
+ * Image replacement
+ */
+
+.ir {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: 0;
+  direction: ltr;
+  display: block;
+  overflow: hidden;
+  text-align: left;
+  text-indent: -999em;
+}
+
+.ir br {
+  display: none;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/**
+ * Clearfix helper
+ * Used to contain floats: h5bp.com/q
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 800px) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+     only screen and (min-resolution: 144dpi) {
+  /* Style adjustments for viewports that meet the condition */
+}
